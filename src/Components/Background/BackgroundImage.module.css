@@ -1,0 +1,46 @@
+.backgroundImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.oldBackground {
+  -webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
+  animation-name: removeOldBackground;
+}
+
+.newBackground {
+  /* These first two properties fix a chrome flashing error. Dunno why, but it works lol */
+  -webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
+  animation-name: presentNewBackground;
+}
+
+.newBackground,
+.oldBackground {
+  animation-duration: 1s;
+}
+
+@keyframes removeOldBackground {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes presentNewBackground {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}

@@ -1,0 +1,12 @@
+
+.error {
+  position: absolute;
+  width: 100vw;
+  bottom: 1vh;
+  color: white;
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+}

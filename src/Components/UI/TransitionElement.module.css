@@ -1,0 +1,77 @@
+.transition {
+  --fadein-time: 3.5s;
+  --flyin-time: 2s;
+  --fadeout-time: 1s;
+  --max-height: 7vh;
+}
+
+.horizontal {
+  animation: fadeIn var(--fadein-time);
+}
+
+.horizontal > * {
+  position: relative;
+  left: 100px;
+  animation: flyInHorizontal var(--flyin-time);
+}
+
+.vertical {
+  animation: fadeIn var(--fadein-time);
+}
+
+.vertical > * {
+  position: relative;
+  top: 100px;
+  animation: flyInVertical var(--flyin-time);
+}
+
+.hiding {
+  animation: fadeOut var(--fadeout-time);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes flyInHorizontal {
+  0% {
+    opacity: 0;
+    left: 100px;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes flyInVertical {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    max-height: var(--max-height);
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    max-height: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.grayScreen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.citySearch {
+  position: fixed;
+  --length: min(50vw, 50vh);
+  width: var(--length);
+  height: var(--length);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+  z-index: 2;
+  border-radius: 5px;
+}

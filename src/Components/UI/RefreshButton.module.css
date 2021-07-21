@@ -1,0 +1,15 @@
+.refresh {
+  position: absolute;
+  right: 5vh;
+  top: 5vh;
+  cursor: pointer;
+  filter: brightness(300%);
+  transform: scale(calc(2/3));
+  image-rendering: crisp-edges;
+  transition: transform 200ms;
+}
+
+.refresh:hover {
+  transform-origin: 50% 50%;
+  transform: rotate(180deg) scale(1);
+}

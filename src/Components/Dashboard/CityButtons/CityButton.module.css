@@ -1,0 +1,35 @@
+.buttonContainer {
+  display: inline-flex;
+}
+
+.buttonUnderline {
+  position: relative;
+  left: 0;
+  top: 8px;
+  border: solid 1px;
+  border-color: transparent;
+  width: 0;
+  height: 0;
+  margin: 0;
+  transition: width 200ms, border-color 200ms;
+}
+
+.cityButton:hover .buttonUnderline, .selected {
+  border-color: white;
+  width: 100%;
+}
+
+.cityButton {
+  color: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+  margin: 10px 1vh;
+  font-size: 3vh;
+  cursor: pointer;
+  transition: background 500ms;
+}
+
+.cityButton:hover {
+  background: rgba(255, 255, 255, 0.15);
+}

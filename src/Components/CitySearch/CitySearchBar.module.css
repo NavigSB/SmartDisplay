@@ -1,0 +1,26 @@
+
+.searchBar {
+  border: none;
+  border-bottom: solid 1px white;
+  background-color: transparent;
+  color: white;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  font-size: 2vh;
+  transition: border-bottom-width 0.1s;
+}
+
+.searchBar::placeholder {
+  color: rgb(196, 196, 196);
+}
+
+.searchBar::selection {
+  background-color: black;
+}
+
+.searchBar:focus {
+  outline: none;
+  border-bottom-width: 3px;
+}

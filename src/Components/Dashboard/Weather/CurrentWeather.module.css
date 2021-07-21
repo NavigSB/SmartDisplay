@@ -1,0 +1,13 @@
+
+.currentWeather {
+  display: inline-flex;
+  margin-left: 2vh;
+}
+
+.icon {
+  height: 6vh;
+}
+
+.hidden {
+  display: none;
+}

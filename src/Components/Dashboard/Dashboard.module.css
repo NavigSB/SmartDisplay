@@ -1,0 +1,16 @@
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 10vh;
+  bottom: 10vh;
+  color: white;
+}
+
+.dashboardComp {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4vh;
+  height: 60%;
+}

@@ -1,0 +1,16 @@
+.itemContainer {
+  border-bottom: solid 1px white;
+  cursor: pointer;
+}
+
+.searchItem {
+  padding-left: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  margin: 0;
+  color: white;
+}
+
+.itemContainer:hover .searchItem {
+  color: rgb(196, 196, 196);
+}
